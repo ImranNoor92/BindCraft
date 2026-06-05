@@ -1,0 +1,9 @@
+{
+    "design_path": "/data/binder_software/BindCraft/runs/15delt3/trial_5_may_19_26/output/",
+    "binder_name": "AAV2_t3_hexamer",
+    "starting_pdb": "/data/binder_software/BindCraft/runs/15delt3/trial_5_may_19_26/1lp3_hexamer_trimmed_fixed.pdb",
+    "chains": "A,B,C,D,E,F",
+    "target_hotspot_residues": "A105-115",
+    "lengths": [60, 150],
+    "number_of_final_designs": 50
+}

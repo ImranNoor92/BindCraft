@@ -1220,15 +1220,15 @@
         "higher": false
     },
     "Average_Target_RMSD": {
-        "threshold": null,
+        "threshold": 5,
         "higher": false
     },
     "1_Target_RMSD": {
-        "threshold": null,
+        "threshold": 5,
         "higher": false
     },
     "2_Target_RMSD": {
-        "threshold": null,
+        "threshold": 5,
         "higher": false
     },
     "3_Target_RMSD": {

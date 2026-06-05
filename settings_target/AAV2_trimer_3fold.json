@@ -1,0 +1,9 @@
+{
+    "design_path": "/data/binder_software/BindCraft/aav/output/",
+    "binder_name": "AAV2_3fold",
+    "starting_pdb": "/data/binder_software/BindCraft/aav/1lp3_trimer_3fold_tight.pdb",
+    "chains": "A,B,C",
+    "target_hotspot_residues": "A458-472,A488-494,B458-472,B488-494,C458-472,C488-494",
+    "lengths": [60, 120],
+    "number_of_final_designs": 100
+}

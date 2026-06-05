@@ -1,0 +1,9 @@
+{
+    "design_path": "/data/binder_software/BindCraft/aav_monomer/output_run2/",
+    "binder_name": "AAV2_monomer",
+    "starting_pdb": "/data/binder_software/BindCraft/aav_monomer/1lp3_monomer_1chain_tight.pdb",
+    "chains": "A",
+    "target_hotspot_residues": "A458-472,A488-494",
+    "lengths": [60, 100],
+    "number_of_final_designs": 50
+}
