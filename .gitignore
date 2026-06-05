@@ -1,33 +1,49 @@
-# ===== Model weights (large, not source) =====
-params/
+# =====================================================================
+# ALLOW-LIST policy: ignore everything by default, then permit only
+# source / config / documentation file types. This guarantees that
+# run outputs (structures, figures, logs, weights, etc.) are NEVER
+# pushed, even brand-new output formats we haven't seen before.
+# To track a new file type, add a "!*.ext" line below.
+# =====================================================================
 
-# ===== Python caches =====
+# 1) Ignore everything...
+*
+
+# 2) ...but still descend into directories so allowed files are reachable
+!*/
+
+# 3) Allow source / config / docs
+!.gitignore
+!*.py
+!*.R
+!*.sh
+!*.bash
+!*.md
+!*.rst
+!*.txt.example
+!*.json
+!*.jsonc
+!*.xml
+!*.yml
+!*.yaml
+!*.toml
+!*.cfg
+!*.ini
+!*.conf
+!*.csv.example
+
+# 4) Re-exclude things that are source-typed but are NOT real source:
+#    - presentation/slide material
+#    - the large model-weights folder (params/)
+#    - python caches
+presentation/
+params/
 __pycache__/
 *.pyc
 *.pyo
 
-# ===== Run outputs / structures / figures (binary) =====
-*.png
-*.pdb
-*.pdb1
-*.html
-*.npz
-*.csv
-*.xlsx
-*.docx
-*.pdf
-*.zip
-*.log
-
-# ===== Vector / presentation graphics =====
-*.svg
-
-# ===== Presentation material (slides, figure scripts) =====
-presentation/
-
-# ===== Text outputs (run logs, summaries) =====
-*.txt
-
-# ===== Editor / tooling =====
+# 5) Editor / tooling config (local, not part of the project)
 .vscode/
+.claude/
 .codex
+.idea/
